@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/8930c3c7ef.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inconsolata&display=swap" rel="stylesheet">
+    <!--iconos-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add_shopping_cart" />   
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
 </head>
 
 
@@ -15,70 +24,118 @@
     <header>
         <nav class="navbar">
             <ul class="list"> 
-                <li><a href="cds.html" target="_blank">CDs</a></li>
-                <li><a href="">Vinilos</a></li>
-                <li><a href="">Merch</a></li>
-                <li><a href="">Contacto</a></li>
+                <!--<li><a href="cds.html" target="_blank">CDs</a></li>-->
+                <li><a href="#vinils">Cds & Vinilos</a></li>
+                <li><a href="#merch">Merch</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
-            <div>
-                <i class="ri-search-line" id="iconito"></i>
-                <i class="ri-mail-line" id="iconito"></i>
-                <i class="ri-shopping-cart-line" id="iconito"></i>
-            </div>
+                <i class="fi fi-rr-shopping-cart" id="iconito"></i>
+            
         </nav>
     </header>
     
-   <div>
-        <img src="Discotienda_Vinilo.jpg" alt="tienda_vinicos" class="banner">
+   <div class="banner">
+        
    </div>
 
-<h2>Los mas vendidos</h2>
-    <div class="contenedor">
+<h2 id="text">Los mas vendidos</h2>
+    <div class="contenedor" id="vinils">
         
         <div class="product"  id="boxs">
             <img src="vinilo.jpg" alt="vinilo-taylor">
-            <h3>Taylor Swift-1989</h3>
+            <h3 class="text-h3">Taylor Swift</h3>
+            <p>1989 (Taylor's version)</p>
+            <p class="text-price">$20,000</p>
         </div>
         <div class="product" id="boxs">
-            <img src="cds.jpg" alt="cd-selena">
-            <h3>Selena Gomez-CD</h3>
+            <img src="cds.jpg" alt="cd-kiki">
+            <h3 class="text-h3">Chiara Oliver</h3>
+            <p>La libreta rosa</p>
+            <p class="text-price">$10,000</p>
         </div>
         <div class="product" id="boxs">
             <img src="vinilo2.jpg" alt="vinilo-camila">
-            <h3>C,XOXO-Camila cabello</h3>
+            <h3 class="text-h3">Camila cabello</h3>
+            <p>C,XOXO</p>
+            <p class="text-price">$20,000</p>
         </div>
         <div class="product" id="boxs">
             <img src="cds2.jpg" alt="cs-billie">
-            <H3>Happier than ever-Billie Elish</H3>
+            <h3 class="text-h3">Billie Elish</h3>
+            <p>Happier than ever</p>
+            <p class="text-price">$10,000</p>
         </div>
 
     </div>
     <br>
-    <input class="boton" type="button" value="Ver mas...">
+
+    <div class="boton">
+        <input  type="button" value="Ver mas...">
+    </div>
 
     
     <br>
 
     <h2 id="merch_text">Merch de tus artistas favoritos</h2>
-    <div class="box">
-        <div class="boxmerch"> 
-            <button>+</button>            
+    <div class="box" id="merch">
+        <div class="box-merch">
+            <img src="merchcamz.jpg" alt="camilamerch" class="img-merch"> 
+            <p>HODDIE- Camila Cabello</p>
+            <p class="text-price">$15.000</p>
+
+            <div id="bt">
+                <button class="bt-merch">
+                    <span class="material-symbols-outlined">
+                        add_shopping_cart
+                    </span>
+                </button> 
+            </div>           
         </div>
-        <div class="boxmerch">
-            <button>+</button>
+        <div class="box-merch">
+            <img src="merchbillie.jpg" alt="billiemerch" class="img-merch">
+            <p>REMERA-  Billie Elish</p>
+            <p class="text-price">$15.000</p>
+
+            <div id="bt">
+                <button class="bt-merch">
+                    <span class="material-symbols-outlined">
+                        add_shopping_cart
+                    </span>
+                </button>
+            </div>
         </div>
-        <div class="boxmerch">
-            <button>+</button>
+        <div class="box-merch">
+            <img src="merchkiki.jpg" alt="kikimerch" class="img-merch">
+            <p>REMERA- Chiara Oliver</p>
+            <p class="text-price">$15.000</p>
+
+            <div id="bt">
+                <button class="bt-merch">
+                    <span class="material-symbols-outlined">
+                    add_shopping_cart
+                    </span>
+                </button>
+            </div>
         </div>
-        <div class="boxmerch">
-            <button>+</button>
-        </div>
+        <div class="box-merch">
+            <img src="merchtaylor.jpg" alt="taylormerch" class="img-merch">
+            <p>HODDIE-Taylor Swift</p>
+            <p class="text-price">$15.000</p>
+            
+            <div id="bt">
+                <button class="bt-merch">
+                    <span class="material-symbols-outlined">
+                        add_shopping_cart
+                    </span>
+                </button>
+            </div>    
+        </div> 
     </div>
 
     <br>
-
-    <div class="regist">
-        <h1>Registrate para no perderte las novedades</h1>
+   
+    <div class="regist" id="contact">
+        <h1 class="text-re">Registrate para no perderte las novedades</h1>
         <button>
             <i class="fa-brands fa-google fa-xl"></i>
             Continue with Google
@@ -94,41 +151,42 @@
             
             <div> 
                 <form action="" class="correo">
-                    <label for="">Email:</label>
-                    <input type="email" name="" id="">
-                    <input type="button" value="enviar">
+                    <label for="" class="text-em"></label>
+                    <input type="email" name="" id="mail-box">
+                    <input type="button" value="enviar" id="bt-em">
                 <br>
                 </form>
                     <div class="iconos">
                         <a href="">
-                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                            <i class="fi fi-brands-instagram"></i>    
                         </a>
                         <a href="">
-                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                            <i class="fi fi-brands-twitter"></i>
                         </a>
                         <a href="">
-                            <i class="fa-brands fa-x-twitter fa-2xl"></i>
+                            <i class="fi fi-brands-facebook"></i>
                         </a>
                     </div>
             </div>
 
-            <div class="boxf">
+            <section class="boxf">
                 <h3>sobre nosotros</h3>
-                <p class="textp">Lorem ipsum dolor, sit amet consectetur adipisicing  Lorem, ipsum dolor sit ametr  consectetur adipisicing elit.  Duciiente libero itaque aliquid at asperiores quia. Doloribus eaque dicta adipisci, in labore excepum velit corporis tenetur.  </p>
-            </div>
-            <div class="boxf">
+                <p class="textp">Lorem ipsum dolor, sit amet consectetur adipisicing  Lorem, ipsum dolor sit ametr  consectetur adipisicing elit.  Duciiente libero itaque al.  </p>
+            </section>
+            <section class="boxf">
                 <h3>soporte</h3>
-                <p>Lorem ipsum dolor, sit amet consectet <br>
-                Explicabo corporis consequuntur, neque i <br>
-                nt id aut delectus saepe natus  maxime.</p>
-            </div>
-            <div class="boxf">
+                <p>Terminos y condiciones <br>
+                Politicas de privacidad<br>
+                Arrepentimiento de compra</p>
+            </section>
+            <section class="boxf">
                 <h3>contacto</h3>
-                <p>vinilosycdsmusic@gmail.com</p>
-            </div>
+                <p>vinilosycdsc@musicsotre.com</p>
+            </section>
         </div>
         
     </footer>
 
 </body>
 </html>
+
